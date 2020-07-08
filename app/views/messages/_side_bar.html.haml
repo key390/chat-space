@@ -2,7 +2,7 @@
   .chat-side-header
     .top-items
       %p.top-items__name
-        ユーザー名
+        = current_user.name
         %ul.top-items__icon-list
           %li
           = link_to "#", class: "top-items__icon" do
@@ -10,7 +10,7 @@
             %span<>
 
           %li
-          = link_to "#", class: "top-items__icon" do
+          = link_to edit_user_path(current_user) , class: "top-items__icon" do
             = icon('fas', 'cog')
             %span<>
             
