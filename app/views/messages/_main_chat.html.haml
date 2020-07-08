@@ -1,1 +1,39 @@
-<チャット画面>
+.chat-main
+  .chat-main-header
+    .left-header
+      .group-title
+        test
+      .group-member 
+        Member : masa
+    .right-header 
+      .group-edit-btn
+        = link_to "#", class:"edit" do
+          Edit
+
+  .chat-main__message-list
+    .chat-messages
+      .message-box
+        .message-info
+          .message-name  
+            masa
+          .message-date
+            2020/4/1(WED) 00:00:00
+        .message
+          おはよう
+      .message-box
+        .message-info
+          .message-name  
+            masa
+          .message-date
+            2020/4/1(WED) 00:00:01
+        .message
+          おはよう
+ 
+  .chat-main__message-form
+    .input-box
+      %input{type: "text", class:"input-box__text",placeholder:"type a message"}
+      %label{class: "input-box__image"}
+        = icon('fas', 'image')
+        %input{type:"file", class:"input-box__image__file"}
+    %input{type:"submit",class:"submit-btn"}
+   
