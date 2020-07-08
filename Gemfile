@@ -50,12 +50,11 @@ group :test do
   gem 'webdrivers'
 end
 
+gem 'devise'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-<<<<<<< Updated upstream
 gem "haml-rails", ">= 1.0", '<= 2.0.1'
 
 gem 'font-awesome-sass', '~> 5.13.0'
-=======
->>>>>>> Stashed changes
+
