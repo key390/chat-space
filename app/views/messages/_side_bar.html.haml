@@ -4,8 +4,8 @@
       %p.top-items__name
         = current_user.name
         %ul.top-items__icon-list
-          %li
-          = link_to "#", class: "top-items__icon" do
+          %li 
+          = link_to new_group_path, class: "top-items__icon" do
             = icon('fas', 'edit')
             %span<>
 
@@ -15,15 +15,13 @@
             %span<>
             
   .chat-side-groups
-    .groups
-      = link_to "#", class: "group" do
-        %p.groups-name TECH CHANP
-        %p.groups-message まだメッセージはありません。
-    .groups
-      = link_to "#", class: "group" do
-        %p.groups-name TECH CHANP
-        %p.groups-message まだメッセージはありません。
-    
+    - current_user.groups.each do |group|
+      .groups
+        = link_to "#"  do
+          .groups-name
+            = group.name
+          .groups-message
+            メッセージはまだありません
 
 
 

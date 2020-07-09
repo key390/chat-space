@@ -38,7 +38,7 @@
           }
             .top-items__icon{
             margin-left: 5px;
-            color:#ffffff;
+            color: #ffffff;
             }
 
     .chat-side-groups {
@@ -48,17 +48,18 @@
       .groups{
        box-sizing: border-box;
        padding: 20px 0 40px;
-       margin: 0 20px;
+       margin: 0 20px;    
       }
-        .group{
-          color: #ffffff;      
-          text-decoration: none;       
-          font-size: 15px;
-          margin-bottom: 5px;
+        .groups-name{
+        color: #ffffff;     
+        text-decoration: none;       
+        font-size: 15px;
+        margin-bottom: 5px;
         }
-          .groups-message{
-          font-size: 11px;
-          }
+        .groups-message{
+        color: #ffffff;  
+        font-size: 11px;
+        }        
   }
   // メインチャット画面
   .chat-main{
