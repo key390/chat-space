@@ -5,23 +5,23 @@
         = current_user.name
         %ul.top-items__icon-list
           %li 
-          = link_to new_group_path, class: "top-items__icon" do
+          = link_to new_group_path, class: 'top-items__icon' do
             = icon('fas', 'edit')
             %span<>
 
           %li
-          = link_to edit_user_path(current_user) , class: "top-items__icon" do
+          = link_to edit_user_path(current_user) , class: 'top-items__icon' do
             = icon('fas', 'cog')
             %span<>
             
   .chat-side-groups
     - current_user.groups.each do |group|
       .groups
-        = link_to "#"  do
+        = link_to group_messages_path(group), class:' group-name' do
           .groups-name
             = group.name
           .groups-message
-            メッセージはまだありません
+            = group.show_last_message
 
 
 

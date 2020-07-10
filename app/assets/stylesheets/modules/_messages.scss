@@ -31,8 +31,8 @@
         font-size: 16px;
         }
           .top-items__icon-list{
-          width:60px;
           list-style: none;
+          width:60px;      
           display: flex;
           justify-content:end;
           }
@@ -48,18 +48,23 @@
       .groups{
        box-sizing: border-box;
        padding: 20px 0 40px;
-       margin: 0 20px;    
+       margin: 0 20px;   
       }
-        .groups-name{
-        color: #ffffff;     
-        text-decoration: none;       
+      .group-name{
+      text-decoration: none; 
+      }
+      .groups-name{
+        color: #ffffff;
         font-size: 15px;
         margin-bottom: 5px;
+        text-decoration: none;
         }
         .groups-message{
         color: #ffffff;  
         font-size: 11px;
-        }        
+        text-decoration: none;
+        }  
+            
   }
   // メインチャット画面
   .chat-main{
@@ -91,9 +96,9 @@
         width: 72px;
         font-size: 16px;
       }
-        .edit{
-          text-decoration: none;
-          color: #38aef0;     
+      .edit{
+        text-decoration: none;
+        color: #38aef0;     
         }
   }
     .chat-main__message-list{
@@ -127,8 +132,11 @@
     height: 90px;
     padding-top: 20px;
     background-color: #d2d2d2;
-    display: flex;
+    // display: flex;
     } 
+    .Form{
+      display: flex;
+    }
       .input-box{
       display: flex;
       position: relative;
@@ -155,11 +163,11 @@
           display: none;
           }
         .submit-btn{
-          height: 50px;
-          padding: 0 30px;
-          background-color: #38aef0;
-          border: none;
-          color: #ffffff;
-          margin-right: 40px;
+        height: 50px;
+        padding: 0 30px;
+        background-color: #38aef0;
+        border: none;
+        color: #ffffff;
+        margin-right: 40px;
         }
 }
