@@ -4,6 +4,7 @@
       .group-title
         = @group.name
       .group-member 
+        Member :
         - @group.users.each do |user|
           .member
             = user.name
@@ -14,8 +15,7 @@
           Edit
 
   .chat-main__message-list
-    .chat-messages
-      = render @messages
+    = render @messages
 
   .chat-main__message-form
     = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
